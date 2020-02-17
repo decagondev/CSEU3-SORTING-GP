@@ -55,6 +55,7 @@ def fact(n):
     # return the product
     return product # O(1)
 
+# O(n)
 def fact_r(n):
     # base case
     if n == 0: # O(1)
@@ -62,3 +63,17 @@ def fact_r(n):
     # recursive call
     return n * fact_r(n - 1) # O(n)
 
+def times_table(n):
+    table = []
+
+    for i in range(n):
+        row = []
+
+        for j in range(n):
+            row.append(j * i)
+    
+        table.append(row)
+
+    return table
+
+        
