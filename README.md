@@ -11,11 +11,16 @@ DAY 1 and 2 of algorithms week sorting repo
 ```python
 items = [1, 2, 3, 4, 5, 234] # size of 6
 
-n = len(items) # O(1)
+n = 6 # O(1)
 
-for item in items:
-    print(item)
-for item in items:
-    print(item)
+for item in items: # O(n) * O(1)
+    print(item) # O(1)
+for item in items: # O(n) * O(1)
+    print(item) # O(1)
+
+# O(1) + O(n) * 1 + O(1) + O(n) * 1 + O(1)
+# O(3) + O(2n)
+# O(1) + O(n)
+# O(n)
 
 ```
