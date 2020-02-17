@@ -1,5 +1,6 @@
 # insertion sort
 
+my_book = {'title': 'Food for thought', 'author': 'jon jones', 'genre': 'food'}
 class Book:
     def __init__(self, title, author, genre):
         self.title = title
