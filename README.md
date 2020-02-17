@@ -9,9 +9,9 @@ DAY 1 and 2 of algorithms week sorting repo
 - From all the Big-Os that are added, drop all but the biggest, dominating one.
 
 ```python
-items = [1, 2, 3, 4, 5, 234] 
+items = [1, 2, 3, 4, 5, 234] # size of 6
 
-n = len(items)
+n = len(items) # O(1)
 
 for item in items:
     print(item)
