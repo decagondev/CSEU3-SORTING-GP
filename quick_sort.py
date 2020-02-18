@@ -81,3 +81,12 @@ def quicksort(data):
     # do a recursive call
     # return the quicksort of left + the [pivot] + quick sort of right
     return quicksort(left) + [pivot] + quicksort(right)
+
+
+lst = [8, 3, 5, 6, 4, 7, 9, 5, 2, 1]
+
+
+slst = quicksort(lst)
+print(lst)
+print('-------------------------')
+print(slst)
