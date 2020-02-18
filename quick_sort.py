@@ -48,15 +48,36 @@ rhs = [7]
 
 def partition(data):
     # make a new empty list for LHS
+    lhs = []
     # make a pivot
+    pivot = data[0]
     # make a new empty list for RHS
+    rhs = []
 
     # loop over the data 
+    for v in data[1:]:
         # if lower than or equal to pivot
+        if v <= pivot:
             # append to LHS list
+            lhs.append(v)
         # otherwise
+        else:
             # append to RHS list
+            rhs.append(v)
     
     # return a tuple containing the LHS list, the pivot, and the RHS list
+    return lhs, pivot, rhs
 
-    pass
+def quicksort(data):
+    # base case
+    # if the data is empty we just return the empty list
+    if data == []:
+        return data
+
+    # do something with the data
+    # partition the data and set it to a tuple of left right and pivot
+    left, pivot, right = partition(data)
+
+    # do a recursive call
+    # return the quicksort of left + the [pivot] + quick sort of right
+    return quicksort(left) + [pivot] + quicksort(right)
